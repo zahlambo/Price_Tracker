@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracking</title>
+    <!-- Bootstrap CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="/css/tracking.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <ul class="nav">
+        <li class="nav-li"><a type="button" role="button" href="/">Home</a></li>
+    </ul>
+    <h2 class="heading text-center">Price History</h2>
+    <!-- <a class="btn btn-warning" href='/' role="button">Home</a> -->
+
+    <ul class="list-prods">
+    <% products.forEach((single) => {
+        %> <li> <div style="background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 174, 174, 0.45)), url(<%= single.el.image %>)" class="prod_single_container">
+            <h2 class="title"><%= single.el.name.length < 25 ? single.el.name : `${single.el.name.substring(0, 25)} ...` %></h2> 
+            <p title="<%= single.label[1] %>" class="price"> <%= single.el.price_history[0].price.substring(1) %> <%= single.label[0] %>  </p>
+            <a class="btn btn-primary" href='<%= single.el.link %>' role="button">Link</a>
+            <a class="btn btn-success" href='/tracking/prod/<%= single.el.id %>' role="button">Show Price Graph</a>
+            <!-- <img src="<%= single.el.image %>" alt="" srcset=""> -->
+        </div> </li>
+        <%
+    }); %>
+    </ul>
+
+</body>
+</html>
