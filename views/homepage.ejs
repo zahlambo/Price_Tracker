@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Price_Tracker </title>
+   <link rel="stylesheet" type="text/css" href="/css/style.css">
+   <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+   <link rel="stylesheet" type="text/css" href="/css/homepagebody.css">
+</head>
+<body>
+   <header>
+      <%- include('components/nav') %>
+   </header>
+
+    <div class="main-body">
+        <h1>Recent products</h1>
+        <div class="card-container" id="card-container" >
+           <%products.forEach(product => {%>
+            <div class="product">
+              <a class="card" href="/tracking/prod/<%=product._id%>">
+                 <img src="<%=product.image%>" class="card-image">
+                 <p class="card-name"><%=product.name%></p>
+                 <p class="card-price">Price:<%=product.price_history[0].price.substring(1) %></p>
+              </a>
+            </div>
+           <%})%>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/homepage.js"></script>
+    <script type="text/javascript" src="/js/search.js"></script>
+
+</body>    
+</html>

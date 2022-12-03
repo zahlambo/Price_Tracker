@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/register.css">
+  <title>Login</title>
+</head>
+<body>
+    <main class="form-container">
+        <form class="form" id="register-form" action="/auth/register" method="POST">
+        <legend>SIGN UP</legend>
+        <div class="input-container">
+            <label for="name" class="form-label">Username</label>
+            <input class="form-input" name="name" id="name" type="text" placeholder="Username" required/>
+        </div>
+        <div class="input-container">
+            <label for="username" class="form-label">Email</label>
+            <input class="form-input" name="email" id="email" type="email" placeholder="Email" required/>
+        </div>
+        <div class="input-container">
+            <label for="password" class="form-label">Password</label>
+            <input class="form-input" name="password" id="password" type="password" placeholder="Password" required/>
+        </div>
+        <div class="input-container">
+            <label for="confirm-password" class="form-label">Confirm Password</label>
+            <div class="message-container">
+                <input class="form-input" id="confirm-password" type="password" placeholder="Confirm Password" required/>
+                <div class="message error medium" id="password-mismatch-message">
+                    Passwords Do Not Match
+                </div>
+            </div>
+        </div>
+        <button class="auth-btn">Sign Up</button>
+        <a href="/auth/login" class="button-anchor"><button class="redirect-btn" type="button">Sign In</button></a>
+        </form>
+        <script type="text/javascript" src="/js/register.js"></script>
+    </main>
+</body>
+</html>
