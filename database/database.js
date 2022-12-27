@@ -4,7 +4,7 @@ require("dotenv").config(); // Getting all the environment variables.
 
 // Database connection
 mongoose.connect(
-  `mongodb+srv://Zahir:zahir54uli@pricetracker.iopmqeb.mongodb.net/?retryWrites=true&w=majority`,
+  `mongodb://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@pricetracker-shard-00-00.f9njy.mongodb.net:27017,pricetracker-shard-00-01.f9njy.mongodb.net:27017,pricetracker-shard-00-02.f9njy.mongodb.net:27017/priceTracker?ssl=true&replicaSet=atlas-11qc0i-shard-0&authSource=admin&retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 const db = mongoose.connection;
