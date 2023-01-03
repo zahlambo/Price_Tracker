@@ -94,7 +94,7 @@ delete_product = driver.find_element_by_xpath(delete_product_xpath)
 delete_product_input = driver.find_element_by_xpath(delete_product_input_xpath)
 delete_product_search = driver.find_element_by_xpath(delete_product_search_xpath)
 delete_product.click()
-delete_product_input.send_keys('dragon ball')
+delete_product_input.send_keys('Forza Horizon 5')
 delete_product_search.click()
 
 # Wait for fetch to work and delete.
