@@ -33,17 +33,17 @@ router.post("/createSchedule", async (req, res) => {
 
 router.get('/hitScraping', async (req, res) => {
     
-    axios.post('http://localhost:3333/api/log', {
+    axios.post('http://localhost:80/api/log', {
 
     })
         .then(function (response) {
             if (response.data.running) {
-                axios.post('http://localhost:3333/api/stopscraping', {
+                axios.post('http://localhost:80/api/stopscraping', {
 
                 })
                     .then(function (response) {
                         console.log(response.data._expr);
-                        axios.post('http://localhost:3333/api/scrape', {
+                        axios.post('http://localhost:80/api/scrape', {
                             cronExpr: _expr
                 })
                     .then(function (response) {
@@ -59,7 +59,7 @@ router.get('/hitScraping', async (req, res) => {
                     });
             } else {
                 console.log("Scraping algo not running.. trying to fire it...");
-                axios.post('http://localhost:3333/api/scrap', {
+                axios.post('http://localhost:80/api/scrap', {
                             cronExpr: "*/1 * * * *"
                 })
                     .then(function (response) {
