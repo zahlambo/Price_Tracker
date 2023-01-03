@@ -1,0 +1,794 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
+    
+    
+      
+        <title>Documentation for Search Products, User Profile and Profile Update</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8b42a75e.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome-to-mkdocs-documentation-for-search_productsuser_profileprofile_upadate-features" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Documentation for Search Products, User Profile and Profile Update" class="md-header__button md-logo" aria-label="Documentation for Search Products, User Profile and Profile Update" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation for Search Products, User Profile and Profile Update
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Welcome to MkDocs Documentation for search_products,user_profile,profile_upadate features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentation for Search Products, User Profile and Profile Update" class="md-nav__button md-logo" aria-label="Documentation for Search Products, User Profile and Profile Update" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Documentation for Search Products, User Profile and Profile Update
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Welcome to MkDocs Documentation for search_products,user_profile,profile_upadate features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Welcome to MkDocs Documentation for search_products,user_profile,profile_upadate features
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-home-page" class="md-nav__link">
+    About Home Page
+  </a>
+  
+    <nav class="md-nav" aria-label="About Home Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-page-image" class="md-nav__link">
+    Home page image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-products" class="md-nav__link">
+    Search Products
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Products">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_1" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-image" class="md-nav__link">
+    Search image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code_1" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-profile" class="md-nav__link">
+    User Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="User Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_2" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step_1" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-profile-image" class="md-nav__link">
+    User Profile image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-profile-update" class="md-nav__link">
+    User Profile Update
+  </a>
+  
+    <nav class="md-nav" aria-label="User Profile Update">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_3" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step_2" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-information-image" class="md-nav__link">
+    Update Information image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-password-image" class="md-nav__link">
+    Change Password image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code_2" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-part" class="md-nav__link">
+    Technical Part
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-home-page" class="md-nav__link">
+    About Home Page
+  </a>
+  
+    <nav class="md-nav" aria-label="About Home Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-page-image" class="md-nav__link">
+    Home page image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-products" class="md-nav__link">
+    Search Products
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Products">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_1" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-image" class="md-nav__link">
+    Search image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code_1" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-profile" class="md-nav__link">
+    User Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="User Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_2" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step_1" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-profile-image" class="md-nav__link">
+    User Profile image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-profile-update" class="md-nav__link">
+    User Profile Update
+  </a>
+  
+    <nav class="md-nav" aria-label="User Profile Update">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_3" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step_2" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-information-image" class="md-nav__link">
+    Update Information image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-password-image" class="md-nav__link">
+    Change Password image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code_2" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-part" class="md-nav__link">
+    Technical Part
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="welcome-to-mkdocs-documentation-for-search_productsuser_profileprofile_upadate-features">Welcome to MkDocs Documentation for search_products,user_profile,profile_upadate features</h1>
+<h2 id="introduction">Introduction</h2>
+<p>More and more businesses are going online. If a user can know the price of a particular product when it increases or decreases then it will be very easy for them to decide whether they should buy the product or not. We wish to solve this problem by having a website <strong>"Price Tracker"</strong>. In this website we are going to track prices of different products at different times. So that user can get a clear view of a product price history and make decisions based on that.
+ This report will contain about the Search_Products, User_Profile and User_Profile_Update Features.</p>
+<h2 id="about-home-page"><strong>About Home Page</strong></h2>
+<h5 id="description">Description</h5>
+<p>When a user browse our website In home page they can see the recent products.
+Here is the ScreenShot of our website's Home Page.</p>
+<h5 id="home-page-image">Home page image</h5>
+<p><img alt="HomePageImage" src="img/homepage.png" />
+User can be able to see the price graph by click on the images.</p>
+<h5 id="code">Code</h5>
+<blockquote>
+<p>Related Codes for reading data from the database</p>
+</blockquote>
+<pre><code>router.get("/", async (req, res) =&gt; {
+const products = await Products.find().limit(9);
+res.render("homepage", { user: req.user, products });
+});
+</code></pre>
+<hr />
+<h2 id="search-products"><strong>Search Products</strong></h2>
+<h5 id="description_1">Description</h5>
+<p>In this Project one of the most important features is search products. User can able to search product as they want even they don't need to login or register. User can write anything in the search-bar. f those things are matched with any product name then those products will be shown. And when the user writes any product name also search suggestions will be shown at the bottom of the search-bar.</p>
+<h5 id="step-by-step">Step-by-Step</h5>
+<ul>
+<li>Users should visit the website.</li>
+<li>Users  have to type in the search-bar which is at the top of the home page.</li>
+<li>After writing the product name they can either click on the suggestion or have
+  to click enter to search.</li>
+</ul>
+<p>Here is the ScreenShot of Search products.</p>
+<h5 id="search-image">Search image</h5>
+<p><img alt="SearchProductImage" src="img/search.png" />
+From here user also can be able to see the price graph by click on the images.</p>
+<h5 id="code_1">Code</h5>
+<blockquote>
+<p>Related Codes for searching data from the database</p>
+</blockquote>
+<pre><code>router.get("/search", async (req, res) =&gt; {
+const searchproduct = await Products.find({
+name: new RegExp(req.query.name, "i"),
+});
+res.json(searchproduct);
+});
+</code></pre>
+<p>For searching quary here Regular Expression used so that user can write anything in the search-bar and if any portions are matchs with any products name then thoose products will be showed. By using this regular expression users dont need to write the full name of any products.  </p>
+<blockquote>
+<p>Fetch fuction for search products</p>
+</blockquote>
+<pre><code>searchBar.addEventListener("keypress", (e) =&gt; {
+
+if (e.keyCode === 13) {
+fetch(`/search?name=${searchBar.value}`)
+    .then((res) =&gt; {
+    return res.json();
+    })
+    .then((data) =&gt; {
+    filterProducts(data);
+    })
+    .catch((err) =&gt; {
+    console.log(err);
+    });
+}
+});
+</code></pre>
+<p>Here also uses the ajax quary so that when user search for a product the page don't need to be reloaded.</p>
+<hr />
+<h2 id="user-profile"><strong>User Profile</strong></h2>
+<h5 id="description_2">Description</h5>
+<p>Registered users can be able to see their profile information. From the home page they have to login first then they can go to their profile page. In that page they are able to see their name, email and what type the user is.</p>
+<h5 id="step-by-step_1">Step-by-Step</h5>
+<ul>
+<li>Users should be registered .</li>
+<li>Users should visit the website and login.</li>
+<li>Users should click ☰ icon and open the navbar</li>
+<li>Then users have to select the profile option.</li>
+<li>After that they can be able to see their information.  </li>
+</ul>
+<p>Here is the ScreenShot of User Profile page.</p>
+<h5 id="user-profile-image">User Profile image</h5>
+<p><img alt="SearchProductImage" src="img/profile.png" />
+From this page user can go back to home page and can logout.</p>
+<hr />
+<h2 id="user-profile-update"><strong>User Profile Update</strong></h2>
+<h5 id="description_3">Description</h5>
+<p>User can be able to edit their profile. In user profile page by clicking Edit Profile they can update their profile. After clicking edit profile button they can see two options (Change Info and Change Password). If users want to change their name or email they should select change info buttton and if users want to change to password they shoul select change password. </p>
+<h5 id="step-by-step_2">Step-by-Step</h5>
+<ul>
+<li>Users should be registered .</li>
+<li>Users should visit the website and login.</li>
+<li>Users should click ☰ icon and open the navbar</li>
+<li>Then users have to select the profile option.</li>
+<li>After that they can be able to see their information.  </li>
+<li>Then users have to click the Edit profile option.</li>
+<li>After clicking the option he/she will be able to see two buttons.  </li>
+<li>If the user wants to update their info then they have to update their info<br />
+  form.  </li>
+<li>After that they have to click the Change information button.</li>
+<li>If the user wants to update their password then they have to click the change 
+  password button.</li>
+<li>After  that they have to write their password and also confirm the password. 
+  then click the change password button.</li>
+</ul>
+<p>Here is the ScreenShot of Change info and change password page.</p>
+<h5 id="update-information-image">Update Information image</h5>
+<p><img alt="UpdateInfoImage" src="img/updateinfo.png" /></p>
+<h5 id="change-password-image">Change Password image</h5>
+<p><img alt="UpdateInfoImage" src="img/updatepass.png" /></p>
+<p>After changing information user should have to be click on the Change Information and Change Password button.</p>
+<h5 id="code_2">Code</h5>
+<blockquote>
+<p>Quary For Update informations</p>
+</blockquote>
+<pre><code>router.put("/userEditInfo", async (req, res) =&gt; {
+const user = await User.findOneAndUpdate(
+{ _id: req.user._id },
+{ $set: { name: req.body.name, email: req.body.email } }
+);
+user.save();
+res.send("");
+});
+</code></pre>
+<blockquote>
+<p>Quary For Change password   </p>
+</blockquote>
+<pre><code>router.put("/changepassword", async (req, res) =&gt; {
+req.body.password = bcrypt.hashSync(req.body.password, 14);
+const user = await User.findOneAndUpdate(
+{ _id: req.user._id },
+{ $set: { password: req.body.password } }
+);
+user.save();
+res.send("");
+});
+</code></pre>
+<p>For Update information and change password ajax quary also uses. Both operations use fetch function so that information can changed without reloading the page.</p>
+<hr />
+<h2 id="technical-part"><strong>Technical Part</strong></h2>
+<p>In this project we are going to be using:</p>
+<ul>
+<li>Express framework of nodeJS. </li>
+<li>HTML for pages markup </li>
+<li>CSS to make page look better. </li>
+<li>Javascript for a better experience for the users. </li>
+<li>MongoDb for database</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      
+    
+  </body>
+</html>
