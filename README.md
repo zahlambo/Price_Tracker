@@ -1,5 +1,5 @@
 # Follow the instructions for git contribute
-## git clone https://github.com/zahlambo/SE-Lab.git
+## git clone https://github.com/zahlambo/Price_Tracker.git
 ## git config --global user.name "name"
 ## git config --global user.email "email"
 ## git checkout working
@@ -11,8 +11,8 @@
 
 # Instruction to run this project
 ### open terminal 
-### git clone https://github.com/zahlambo/SE-Lab.git
-### cd SE-Lab
+### git clone https://github.com/zahlambo/Price_Tracker.git
+### cd Price_Tracker
 ### Create an .env file on working folder
 ### paste following command to .env 
 #### DATABASE_USER=Zahir
